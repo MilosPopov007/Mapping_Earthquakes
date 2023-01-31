@@ -35,14 +35,14 @@ let baseMaps = {
 };
 
 // 1. Add a 2nd layer group for the tectonic plate data.
-let allEarthquakes = new L.LayerGroup();
 let tectonicPlates = new L.LayerGroup();
+let allEarthquakes = new L.LayerGroup();
 let majorEQ = new L.LayerGroup();
 
 // 2. Add a reference to the tectonic plates group to the overlays object.
 let overlays = {
-  "Earthquakes": allEarthquakes,
   "Tectonic Plates": tectonicPlates,
+  "Earthquakes": allEarthquakes,
   "Major Earthquakes": majorEQ
 };
 
@@ -136,7 +136,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geoj
     if (magnitude > 6) {
       return "#ea2c2c";
     }
-    if (magnitude > 5) {
+    if (magnitude >= 5) {
       return "#ea822c";
     }
     if (magnitude <5 ) {
@@ -207,7 +207,7 @@ legend.onAdd = function() {
 //let tectonicData = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json";
 
   // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
-  d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json").then(function(data) {
+  d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json").then((data) =>{
     console.log(data);
     var myStyle = {
       "color": "#ea2c2c",
@@ -218,8 +218,9 @@ legend.onAdd = function() {
     L.geoJSON(data,{
       style: myStyle
     
-  }).addTo(map);
+  
     }).addTo(tectonicPlates);
+  });
  // Then we add Tectonic plates layer to our map
  tectonicPlates.addTo(map);
 });
