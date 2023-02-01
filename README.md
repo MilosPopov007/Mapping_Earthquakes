@@ -21,4 +21,13 @@ Interactive World Map will alow you to explore Earthquakes location with Earthqu
 Let see the final results.
 
 
+![This is an image](https://github.com/MilosPopov007/Mapping_Earthquakes/blob/main/_C__Users_popov_Mapping_Earthquakes_Earthquake_Challenge_index.html%20(2).png)
+
+
+![This is an image](https://github.com/MilosPopov007/Mapping_Earthquakes/blob/main/_C__Users_popov_Mapping_Earthquakes_Earthquake_Challenge_index.html%20(4).png)
+
+
+![This is an image](https://github.com/MilosPopov007/Mapping_Earthquakes/blob/main/_C__Users_popov_Mapping_Earthquakes_Earthquake_Challenge_index.html.png)
+
+
 
