@@ -14,7 +14,7 @@ For this Data Visualisation Analysis I used JavaScript and the D3 library, to re
 
 The Map will showcase the GeoData that will include the Earthquake Data in relation to the Tectonic Plates location on the Earth. Geojson Earthquake Data was obtained from [The United States Geological Survey](https://earthquake.usgs.gov/earthquakes/feed/) a scientific agency of the United States government.
 
-Interactive World Map will alow you to explore Earthquakes location with magnituted in Past 7 Days.
+Interactive World Map will alow you to explore Earthquakes location with Earthquake magnitude in Past 7 Days.
 
 [HTML file with JS Code](https://github.com/MilosPopov007/Mapping_Earthquakes/tree/main/Earthquake_Challenge)
 
